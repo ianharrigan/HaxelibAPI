@@ -53,9 +53,7 @@ typedef ProjectInfos = {
 	var downloads : Int;
 	var versions : Array<VersionInfos>;
 	var tags : List<String>;
-    #if (haxe_ver >= 4)
 	var contributors : Array<UserInfos>;
-    #end
 }
 
 abstract DependencyVersion(String) to String from SemVer {

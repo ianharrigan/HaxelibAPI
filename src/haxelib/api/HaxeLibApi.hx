@@ -41,7 +41,7 @@ class HaxeLibApi {
     }
 
     public function clearListeners() {
-        _listeners.clear();
+        _listeners = new Map<String, Array<HaxeLibEvent->Void>>();
     }
     
     public function dispatchEvent(event:HaxeLibEvent) {

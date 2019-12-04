@@ -209,7 +209,7 @@ class Main {
         #if (haxe_ver >= 4)
             site = new SiteProxy(haxe.remoting.HttpConnection.urlConnect(remotingUrl).resolve("api"));
         #else
-            site = new SiteProxy(haxe.remoting.HttpConnection.urlConnect(remotingUrl).api);
+            site = new SiteProxy(haxe.remoting.HttpConnection.urlConnect(remotingUrl).resolve("api"));
         #end
 	}
 
